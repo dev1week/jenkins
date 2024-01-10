@@ -37,8 +37,9 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+
+ktlint {
     reporters {
-        reporter(ReporterType.CHECKSTYLE)
+        checkstyle() // reporter(ReporterType.CHECKSTYLE) 대신에 checkstyle()를 사용합니다.
     }
 }
