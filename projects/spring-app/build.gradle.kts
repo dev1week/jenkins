@@ -40,6 +40,6 @@ tasks.withType<Test> {
 
 configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
     reporters {
-       reporter(ReporterType.CHECKSTYLE)
+        reporter(ReporterType.CHECKSTYLE)
     }
 }
