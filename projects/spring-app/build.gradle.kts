@@ -38,8 +38,8 @@ tasks.withType<Test> {
 }
 
 
-ktlint {
+configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
     reporters {
-        checkstyle() // reporter(ReporterType.CHECKSTYLE) 대신에 checkstyle()를 사용합니다.
+       reporter(ReporterType.CHECKSTYLE)
     }
 }
